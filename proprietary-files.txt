@@ -1307,3 +1307,17 @@ vendor/firmware/widevine.mdt
 
 # Wi-Fi - from SLD_sprout 11-RKQ1.210607.001-00WW_3_490-release-keys
 vendor/bin/cnss-daemon|1c63b8f94ba601b76edb0ee2fa1d1880de8d0ea3
+
+# Common Camera
+vendor/lib/libchromaflash.so
+vendor/lib/libllvd_smore.so
+vendor/lib/libmmcamera_chromaflash_lib.so
+vendor/lib/libmmcamera_llvd.so
+vendor/lib/libmmcamera_optizoom_lib.so
+vendor/lib/libmmcamera_stillmore_lib.so
+vendor/lib/libmmcamera_trueportrait_lib.so
+vendor/lib/libmmcamera_ubifocus_lib.so
+vendor/lib/liboptizoom.so
+vendor/lib/libseemore.so
+vendor/lib/libtrueportrait.so
+vendor/lib/libubifocus.so
