@@ -56,6 +56,21 @@ fi
 function blob_fixup() {
     case "${1}" in
 
+    # Fix jar path
+    product/etc/permissions/qti_fingerprint_interface.xml)
+        sed -i 's|/system/framework/|/system/product/framework/|g' "${2}"
+        ;;
+
+    # Rename to fp service avoid conflicts
+    vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service_asus.rc)
+        sed -i 's|android.hardware.biometrics.fingerprint@2.1-service|android.hardware.biometrics.fingerprint@2.1-service_asus|g' "${2}"
+        ;;
+
+    # remove android.hidl.base dependency
+    vendor/lib/hw/camera.sdm660.so)
+        patchelf --remove-needed "android.hidl.base@1.0.so" "${2}"
+        ;;
+
     # remove android.hidl.base dependency
     system/lib64/libfm-hci.so | system/lib64/libwfdnative.so | system/lib/libfm-hci.so | system/lib/libwfdnative.so)
         "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
