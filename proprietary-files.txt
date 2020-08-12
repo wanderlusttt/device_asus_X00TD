@@ -777,12 +777,12 @@ vendor/lib64/vendor.qti.latency@2.0.so|60ab3143325e855f8c72e3f603c28efe2e7227b9
 vendor/lib64/vendor.qti.latency@2.1.so|47f0d25338274af94764be9d39eabef8cf5ca790
 vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so|c041dbfc99643e791e52c4e7f3a87050a8cd6c93
 
-# Display firmware (Novatek)
-vendor/firmware/novatek_ts_fw_dj.bin
-vendor/firmware/novatek_ts_fw_txd.bin
+# Display firmware (Novatek) - from UL-ASUS_X00T-WW-16.2017.2007.084
+vendor/firmware/novatek_ts_fw_dj.bin|fd3d12c6abd1a77766ab1d1a0a60ce4256001614
+vendor/firmware/novatek_ts_fw_txd.bin|3841353c8f050a81178f9a5667b1e7cd5bdcc514
 
-# Display firmware (Synaptics)
-vendor/firmware/startup_fw_update.img
+# Display firmware (Synaptics) - from UL-ASUS_X00T-WW-16.2017.2007.084
+vendor/firmware/startup_fw_update.img|24ce9ee6defe4dc2861f27c1087fc13a44212b9d
 
 # DPM - from SLD_sprout 11-RKQ1.210607.001-00WW_3_490-release-keys
 system_ext/bin/dpmd|4662a11c5331919cc08d541a298444ffce18cc1b
