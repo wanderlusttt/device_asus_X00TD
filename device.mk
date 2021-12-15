@@ -4,8 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+# APEX
 PRODUCT_COMPRESSED_APEX := false
 
 # Default is nosdcard, S/W button enabled in resource
