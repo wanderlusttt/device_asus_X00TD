@@ -105,6 +105,10 @@ dalvik.vm.heaptargetutilization=0.75
 dalvik.vm.heapminfree=512k
 dalvik.vm.heapmaxfree=8m
 
+# Dexopt
+pm.dexopt.first-boot=quicken
+pm.dexopt.bg-dexopt=everything
+
 # Display
 debug.sf.enable_hwc_vds=1
 debug.sf.enable_gl_backpressure=1
