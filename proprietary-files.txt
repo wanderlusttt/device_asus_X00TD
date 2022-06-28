@@ -1343,3 +1343,4 @@ vendor/bin/cnss-daemon|1c63b8f94ba601b76edb0ee2fa1d1880de8d0ea3
 # Misc
 vendor/lib64/libops.so
 vendor/lib64/libspl.so
+vendor/lib64/liblocdiagiface.so
