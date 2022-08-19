@@ -18,7 +18,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 LOCAL_SHARED_LIBRARIES := \
-    audio.primary.$(TARGET_BOARD_PLATFORM) \
+    audio.primary.sdm660 \
     libaudioroute \
     libaudioutils \
     libcutils \
@@ -33,7 +33,7 @@ LOCAL_C_INCLUDES += \
     $(call project-path-for,qcom-audio)/hal/audio_extn
 
 LOCAL_SRC_FILES := audio_amplifier.c
-LOCAL_MODULE := audio_amplifier.$(TARGET_BOARD_PLATFORM)
+LOCAL_MODULE := audio_amplifier.sdm660
 LOCAL_HEADER_LIBRARIES := \
     generated_kernel_headers \
     libhardware_headers
