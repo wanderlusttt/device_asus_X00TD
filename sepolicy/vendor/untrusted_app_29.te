@@ -1,2 +1,2 @@
 allow untrusted_app_29 vendor_adsprpc_prop:file { open read getattr };
-allow untrusted_app_29 selinuxfs:file { open read };
+#allow untrusted_app_29 selinuxfs:file { open read };

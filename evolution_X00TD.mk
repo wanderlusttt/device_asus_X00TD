@@ -12,6 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit some common Evolution stuff
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 TARGET_USES_MINI_GAPPS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
