@@ -494,6 +494,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.X00TD
 
+# TouchGestures
+PRODUCT_PACKAGES += \
+    TouchGestures
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
