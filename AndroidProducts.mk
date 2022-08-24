@@ -5,8 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_X00TD.mk
+    $(LOCAL_DIR)/syberia_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_X00TD-userdebug
-
+    syberia_X00TD-userdebug
