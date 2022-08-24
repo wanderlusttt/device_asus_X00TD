@@ -245,6 +245,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
+# Kernel headers location
+PRODUCT_VENDOR_KERNEL_HEADERS += hardware/qcom-caf/$(QCOM_HARDWARE_VARIANT)/kernel-headers
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0.vendor
