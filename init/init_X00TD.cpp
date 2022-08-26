@@ -82,6 +82,4 @@ void vendor_load_properties()
 {
     set_avoid_gfxaccel_config();
     NFC_check();
-    // Misc
-    property_override("ro.apex.updatable", "false");
 }
