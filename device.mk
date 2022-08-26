@@ -7,7 +7,8 @@
 # Inherit the proprietary files
 $(call inherit-product, vendor/asus/X00TD/X00TD-vendor.mk)
 
-# APEX
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 PRODUCT_COMPRESSED_APEX := false
 
 # Default is nosdcard, S/W button enabled in resource
