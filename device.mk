@@ -127,10 +127,12 @@ PRODUCT_PACKAGES += \
     gralloc.sdm660 \
     hwcomposer.sdm660 \
     memtrack.sdm660 \
-    libdisplayconfig \
+    libdisplayconfig.qti \
+    libdisplayconfig.qti.vendor \
     libtinyxml \
     libqdMetaData \
-    libqdMetaData.system \
+    libqdMetaData.vendor \
+    libvulkan \
     vendor.display.config@1.9 \
     vendor.display.config@2.0 \
     vendor.display.config@1.9.vendor \
@@ -140,12 +142,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.allocator@3.0-impl \
+    android.hardware.graphics.allocator@4.0-impl  \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     android.frameworks.displayservice@1.0 \
     android.frameworks.displayservice@1.0.vendor
+
+# Include display HAL makefiles.
+include hardware/qcom-caf/msm8998/display/display-commonsys-intf/config/display-interfaces-product.mk
+include hardware/qcom-caf/msm8998/display/display-commonsys-intf/config/display-product-system.mk
 
 # Display Device Config
 PRODUCT_COPY_FILES += \
